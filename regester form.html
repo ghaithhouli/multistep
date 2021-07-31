@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Register</title>
+    <link rel='stylesheet' href='../multiwindow/css/bootstrap.css'>
+    <link rel='stylesheet' href='../multiwindow/css/Style.css' />
+
+
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-1">
+            <img src="../multiwindow/charity.jpg">
+        </div>
+        <div class="container">
+
+            <div class="title">
+                Charity Registeration Form
+            </div>
+            <div class="bar">
+                <div class="step">
+                    <p>Charity Info</p>
+                    <div class="bullet">
+                        <span>1</span>
+                    </div>
+                    <div class="check-bar fas fa-check"></div>
+                </div>
+
+                <div class="step">
+                    <p> Description</p>
+                    <div class="bullet">
+                        <span>2</span>
+                    </div>
+                    <div class="check-bar fas fa-check"></div>
+                </div>
+
+                <div class="step">
+                    <p>Bank Account</p>
+                    <div class="bullet">
+                        <span>3</span>
+                    </div>
+                    <div class="check-bar fas fa-check"></div>
+                </div>
+
+                <div class="step">
+                    <p>Proofs</p>
+                    <div class="bullet">
+                        <span>4</span>
+                    </div>
+                    <div class="check-bar fas fa-check"></div>
+                </div>
+
+            </div>
+            <div class="form-outer">
+                <form class="form-page">
+                    <div class="page slidepage  ">
+
+                        <div class="title">
+                            Charity Info
+                        </div>
+                        <div class="input_field">
+                            <label>Charity name</label>
+                            <input type="text" name="charity_name" class="input">
+                        </div>
+                        <div class="input_field">
+                            <label>License number</label>
+                            <input type="text" name="license_number" class="input">
+                        </div>
+                        <div class="input_field">
+                            <label>License date</label>
+                            <input type="date" class="input" name="license_date" max="2021-1-1">
+                        </div>
+                        <div class="input_field">
+                            <label>Charity domain</label>
+                            <div class="custum_select">
+                                <select name="charity_domain">
+                    <option value="">Selcet </option>
+                    <option value="Developmental">Developmental</option>
+                    <option value="Scientific">Scientific</option>
+                    <option value="Medical">Medical</option>
+                    <option value="Social">Social</option>
+                    <option value="Environmental">Environmental</option>
+                    <option value="Heritage">Heritage</option>
+                  </select>
+                            </div>
+                        </div>
+                        <div class="input_field">
+                            <label>Governorate</label>
+                            <div class="custum_select">
+                                <select name="governorate">
+                    <option value="">Selcet </option>
+                    <option value="Damascus">Damascus</option>
+                    <option value="Rif Dimashq">Rif Dimashq</option>
+                    <option value="Aleppo">Aleppo</option>
+                    <option value="Raqqa">Raqqa</option>
+                    <option value="Suwayda">Suwayda</option>
+                    <option value="Deir el-Zor">Deir el-Zor</option>
+                    <option value="Hasaka">Hasaka</option>
+                    <option value="Homs">Homs</option>
+                    <option value="Idlib">Idlib</option>
+                    <option value="Latakia">Latakia</option>
+                    <option value="Quneitra">Quneitra</option>
+                    <option value="Tartus">Tartus</option>
+                  </select>
+                            </div>
+                        </div>
+                        <div class="input_field">
+                            <label>Address</label>
+                            <textarea type="textar" class="textarea" name="address"></textarea>
+                        </div>
+                        <div class="input_field">
+                            <label>Phone Number</label>
+                            <input type="text" class="input" name="phone_number">
+                        </div>
+                        <div class="input_field terms">
+                            <label class="check">
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                            <p>Agreed to terms and conditions</p>
+                        </div>
+                        <div class="input_field">
+                            <input type="button" class="btn">
+                            <label style="width: 0.5px;"></label>
+                            <input type="button" class="nextBtn btn" value="Next">
+                        </div>
+                    </div>
+
+
+
+                    <div class="page">
+                        <div class="title">
+                            Description and Products
+                        </div>
+                        <div class="input_field">
+                            <label>Charity description</label>
+                            <textarea style="" type="textar" class="textarea" name="charity_description"></textarea>
+                        </div>
+                        <div class="input_field">
+                            <label>Charity products</label>
+                            <textarea type="textar" class="textarea" name="charity_products"></textarea>
+                        </div>
+                        <div class="input_field">
+                            <input type="button" class="prev-1 prev btn" value="Previous">
+                            <input type="button" class="next-1 next btn" value="Next">
+                        </div>
+                    </div>
+
+
+                    <div class="page">
+                        <div class="title">
+                            Bank Accounts
+                        </div>
+                        <div class="input_field">
+                            <label>Bank Name  :</label>
+                            <input type="text" class="input" name="Bank_account_name1">
+                        </div>
+                        <div class="input_field">
+                            <label>Account Number  :</label>
+                            <input type="text" class="input" name="Bank_account_num1">
+                        </div>
+                        <div class="input_field">
+                            <input type="button" class="prev-2 prev btn" value="Previous">
+                            <input type="button" class="next-2 next btn" value="Next">
+                        </div>
+                    </div>
+
+
+                    <div class="page">
+                        <div class="title">
+                            necessary photos
+                        </div>
+                        <div class="input_field">
+                            <label>Profile Photo</label>
+                            <input type="file" class="input upload-box" name="your_photos">
+                        </div>
+                        <div class="input_field">
+                            <label>License Photo</label>
+                            <input type="file" class="input upload-box" name="page_photo">
+                        </div>
+                        <div class="input_field">
+                            <label>Other Proofs </label>
+                            <input type="file" class="input upload-box" name="img1">
+                        </div>
+                        <div class="input_field">
+                            <input type="button" class="prev-3 prev btn" value="Previous">
+                            <input type="Submit" class="submit btn" value="Submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--</form>-->
+        </div>
+    </div>
+</body>
+<script src="../multiwindow/js/charity.js"></script>
+
+</html>
